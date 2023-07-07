@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import './index.scss';
 import AnimatedLetters from "../Animatedletters";
 import Logo from "./Logo";
+import Loader from "react-loaders";
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
         }, 4000)
     }, [])
     return (
-        <div className="container home-page">
+        <><div className="container home-page">
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
@@ -36,6 +37,8 @@ const Home = () => {
             </div>
             <Logo></Logo>
         </div>
+            <Loader type="pacman" />
+        </>
     )
 }
 
