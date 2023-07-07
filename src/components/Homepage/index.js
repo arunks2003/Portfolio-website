@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from "react-router-dom";
 import './index.scss';
 import AnimatedLetters from "../Animatedletters";
+import Logo from "./Logo";
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
                 <Link to='/contact' className='flat-button'>Contact Me</Link>
 
             </div>
+            <Logo></Logo>
         </div>
     )
 }
